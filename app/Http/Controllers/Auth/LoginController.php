@@ -37,4 +37,31 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function redirectPath()
+    {
+        if (auth()->user()->perfil=='Alumno') {
+            return '/alumno';
+        }
+        if (auth()->user()->perfil=='Administrador de Sistema') {
+            return '/admin';
+        }
+        if (auth()->user()->perfil=='Director de Carrera') {
+            return '/director';
+        }
+        if (auth()->user()->perfil=='Profesor de Asignatura') {
+            return '/tutor';
+        }
+        if (auth()->user()->perfil=='Profesor de Tiempo completo') {
+            return '/tutor';
+        }
+        if (auth()->user()->perfil=='Biblioteca') {
+            return '/biblioteca';
+        }
+        if (auth()->user()->perfil=='Secretario Académico') {
+            return '/sa';
+        }
+
+        //return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+    }
 }

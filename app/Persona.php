@@ -29,7 +29,7 @@ class Persona extends Authenticatable
         'perfil'
     ];
 
-        /**
+    /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
