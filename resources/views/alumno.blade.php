@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    {{--print_r($commerce)--}}
                 </div>
             </div>
         </div>
