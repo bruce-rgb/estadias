@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Auth::routes();
+Auth::routes(['register'=>false,'verify'=>false]);
 
 //Ruta luego de login
 Route::get('/alumno', 'AlumnoController@index')->name('alumno')->middleware('auth');

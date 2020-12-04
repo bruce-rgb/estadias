@@ -1,0 +1,35 @@
+/* Color del Navbar */
+.bg-uth {
+  background-color: #621132 !important;
+}
+.acrobat {
+  font-size:24px !important;
+  color:red !important;
+}
+
+
+a.back-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a.back-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
